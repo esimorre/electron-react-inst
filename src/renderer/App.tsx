@@ -1,39 +1,31 @@
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
-import icon from '../../assets/icon.svg';
-import './App.css';
+// import './App.css';
+import '@coreui/coreui/dist/css/coreui.min.css';
+
+// eslint-disable-next-line import/order
+import { CProgressBar, CProgress, CContainer, CRow, CCol } from '@coreui/react';
 
 const Hello = () => {
   return (
     <div>
-      <div className="Hello">
-        <img width="200px" alt="icon" src={icon} />
-      </div>
-      <h1>electron-react-boilerplate</h1>
-      <div className="Hello">
-        <a
-          href="https://electron-react-boilerplate.js.org/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button type="button">
-            <span role="img" aria-label="books">
-              📚
-            </span>
-            Read our docs
-          </button>
-        </a>
-        <a
-          href="https://github.com/sponsors/electron-react-boilerplate"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button type="button">
-            <span role="img" aria-label="books">
-              🙏
-            </span>
-            Donate
-          </button>
-        </a>
+      <div className="wrapper d-flex flex-column min-vh-100 bg-light">
+        <div className="body flex-grow-1 px-3">
+          <p />
+          <CRow>
+            <CCol xs={12}>
+              <CProgress height={20} className="mb-3">
+                <CProgressBar
+                  color="warning"
+                  variant="striped"
+                  animated
+                  value={25}
+                >
+                  25%
+                </CProgressBar>
+              </CProgress>
+            </CCol>
+          </CRow>
+        </div>
       </div>
     </div>
   );

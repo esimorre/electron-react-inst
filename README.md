@@ -19,6 +19,29 @@
 
 </div>
 
+## Caractéristiques de ce fork electron-react-boilerplate
+
+Ce fork ajoute quelques trucs comme:
+
+- Splashscreen avec les infos
+  - versions de node, electron, chromium
+  - revision git
+- commande de mise à jour de la revision git (script js)
+  - **node gengitinfo**
+- sandbox pour composants coreui
+
+En préparation:
+
+- intégration des worker threads pour traiter des tâches de fond
+
+Dépendances mises à jour et test OK avec la plateforme:
+
+```
+We are using Node.js16.9.1, Chromium96.0.4664.55, and Electron16.0.5.
+```
+
+---
+
 ## Install
 
 Clone the repo and install dependencies:

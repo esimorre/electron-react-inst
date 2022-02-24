@@ -41,6 +41,10 @@ We are using Node.js16.9.1, Chromium96.0.4664.55, and Electron16.0.5.
 ```
 [snapshots](https://github.com/esimorre/electron-react-inst/wiki) dans le wiki.
 
+La suite est le document original, à adapter au niveau de la commande
+```
+git clone https://github.com/...
+```
 ---
 
 ## Install

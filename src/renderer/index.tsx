@@ -11,6 +11,16 @@ function SplashScreen(_props: { duration: any }) {
   return (
     <>
       <h1>SplashScreen</h1> test test {_props.duration}
+      <p>
+        We are using Node.js
+        <span id="node-version" />
+        , Chromium
+        <span id="chrome-version" />, and Electron
+        <span id="electron-version" />.
+      </p>
+      <p>
+        rev <span id="git-info" />
+      </p>
     </>
   );
 }
